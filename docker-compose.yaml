@@ -19,6 +19,9 @@ services:
     tty: true
     ports:
       - "8000:80"
+    environment:
+      - NGINX_HOST=app
+      - NGINX_PORT=80
     volumes:
       - .:/var/www
     networks:
