@@ -1,5 +1,4 @@
 steps:
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/fullcycle-284222/laravel_docker_compose@sha256:318129b6bd3320ff809218b90088ffe3093991c82e108abe1e5808b73369ce4d', '.']
-images:
-  - 'gcr.io/fullcycle-284222/laravel_docker_compose'
+- name: 'gcr.io/fullcycle-284222/laravel_docker_compose@sha256:318129b6bd3320ff809218b90088ffe3093991c82e108abe1e5808b73369ce4d'
+  args: ['docker-compose up -d']
+  timeout: 500s
