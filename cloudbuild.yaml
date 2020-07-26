@@ -7,5 +7,5 @@ steps:
   args: ['up', '-d']
 
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['tag', 'workspace_app:v1', 'gcr.io/fullcycle-284222/laravel_docker_compose:v1']
-  images: ['gcr.io/fullcycle-284222/laravel_docker_compose:v1']
+  args: ['tag', 'workspace_app:v1', 'gcr.io/fullcycle-284222/laravel_docker_compose']
+  images: ['gcr.io/fullcycle-284222/laravel_docker_compose']
