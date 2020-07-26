@@ -4,7 +4,7 @@ services:
   app:
     build: .
     container_name: app
-    entrypoint: dockerize -wait tcp://fullcycle_db:3306 -timeout 10s ./.docker/entrypoint.sh
+    entrypoint: ./.docker/entrypoint.sh
     volumes:
       - .:/var/www
     networks:
