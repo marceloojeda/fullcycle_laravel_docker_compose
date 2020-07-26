@@ -57,12 +57,12 @@ services:
       - app-network
 
   migration:
-    image: db:latest
+    image: app:latest
     command: ["./wait-for-it/wait-for-it.sh", "mysql:3306", "--", "npm", "run", "migrate"]
     links:
       - db
     depends_on:
-      - app
+      - db
 
 
 networks:
