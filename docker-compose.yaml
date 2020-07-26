@@ -56,6 +56,14 @@ services:
     networks:
       - app-network
 
+  migration:
+    image: db:latest
+    command: ["./wait-for-it/wait-for-it.sh", "mysql:3306", "--", "npm", "run", "migrate"]
+    links:
+      - db
+    depends_on:
+      - app
+
 
 networks:
   app-network:
