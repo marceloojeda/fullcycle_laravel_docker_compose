@@ -1,11 +1,11 @@
 steps:
 
 # Build the new docker image.
-- name: 'gcr.io/cloud-builders/docker'
+- name: 'docker'
   args: ['build', '-t', 'gcr.io/fullcycle-284222/laravel_docker_compose:v1', '.']
 
 # Run the app and dependencies in the background using docker-compose.
 # Warning: this won't be cleaned up, which might be an issue if you run it
 # with the local builder.
-- name: 'docker/compose:2.3
+- name: 'docker/compose'
   args: ['up', '-d']
