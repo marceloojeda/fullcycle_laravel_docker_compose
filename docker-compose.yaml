@@ -2,7 +2,7 @@ version: '2.3'
 
 services:
   app:
-    image: gcr.io/${PROJECT_ID}/laravel_docker_compose@sha256:318129b6bd3320ff809218b90088ffe3093991c82e108abe1e5808b73369ce4d
+    build: .
     container_name: app
     volumes:
       - .:/var/www
