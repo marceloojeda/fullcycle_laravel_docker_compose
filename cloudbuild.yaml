@@ -7,5 +7,5 @@ steps:
 # Run the app and dependencies in the background using docker-compose.
 # Warning: this won't be cleaned up, which might be an issue if you run it
 # with the local builder.
-- name: 'docker/compose:2.3.0
+- name: 'docker/compose:2.3
   args: ['up', '-d']
