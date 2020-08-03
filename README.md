@@ -13,5 +13,3 @@ Dockerhub: https://hub.docker.com/r/marceloojeda/laravel_docker_compose
 # Code Education Rocks
 Dockerhub: https://hub.docker.com/r/marceloojeda/codeeducation
 Obs: usar a tag v1.2, que foi gerada a partir da imagem scratch.
-
-# Build pelo GCP
