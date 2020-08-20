@@ -58,7 +58,7 @@ steps:
   args:
     - 'apply'
     - '-f'
-    - 'deployment-new-yml'
+    - 'k8s/app/deployment-new.yml'
   env:
     - 'CLOUDSDK_COMPUTE_ZONE=us-central1-c'
     - 'CLOUDSDK_CONTAINER_CLUSTER=fc-devops-laravel'
