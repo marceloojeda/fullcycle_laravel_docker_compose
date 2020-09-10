@@ -34,3 +34,5 @@ ENTRYPOINT [ "php-fpm" ]
 
 # EXPOSE 9000
 # ENTRYPOINT [ "php-fpm" ]
+
+# editando apenas para juntar no master e rodar o cloudbuild
