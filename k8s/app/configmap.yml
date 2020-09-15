@@ -4,7 +4,7 @@ metadata:
   name: app-conf
 data:
   env: |
-    APP_NAME=docker-laravel
+    APP_NAME=docker_laravel
     APP_ENV=local
     APP_KEY=base64:bO1gmI6Rjjkobu5BXn+pmKRlmF/QVWJPnC3lQzzCqSc=
     APP_DEBUG=true
@@ -42,5 +42,12 @@ data:
     AWS_DEFAULT_REGION=us-east-1
     AWS_BUCKET=
 
+    PUSHER_APP_ID=
+    PUSHER_APP_KEY=
+    PUSHER_APP_SECRET=
+    PUSHER_APP_CLUSTER=mt1
+
+    MIX_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
+    MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
     NGINX_HOST=app
     NGINX_PORT=80
